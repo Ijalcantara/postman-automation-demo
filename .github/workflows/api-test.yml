@@ -30,9 +30,9 @@ jobs:
             --reporter-htmlextra-export report.html \
             --bail
           
-      # 5️⃣ Upload HTML report as artifact
+      # 5️⃣ Upload HTML report as artifact (use @v4)
       - name: Upload HTML Report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: API-Test-Report
           path: report.html
